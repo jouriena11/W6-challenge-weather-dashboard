@@ -72,5 +72,6 @@ This is how the website looks at 768px screen.
 This is how the website looks at 576px screen.
 
 ## Future Developments
-- Application of Bootstrap to index.html for easier maintenance.
-- Application of geolocation API instead of using Sydney as a default city to fetch weather data
+- To apply Bootstrap to index.html for easier maintenance.
+- To apply geolocation API instead of using Sydney as a default city to fetch weather data
+- To make it possible for users to specify the time of the day for which they want to get the weather data
