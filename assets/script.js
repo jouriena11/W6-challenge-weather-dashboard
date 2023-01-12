@@ -29,7 +29,7 @@ function searchSubmit() {
 
 function getCoordinates(searchQuery) {
     // Get city coordinates (i.e. latitude and longitude) through API
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchQuery}&appid=03515a0380dfd9b5a3ed7a523322404b`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchQuery}&appid=03515a0380dfd9b5a3ed7a523322404b`)
         .then(function(response){
             if (response.status === 404) {
                 throw new Error('API Not found');
@@ -98,7 +98,7 @@ function getCurrentWeather(searchQuery, cityCoordinates) {
             var todayDate = dayjs.unix(currentCityClimate.date).format('D/M/YYYY')
         
             currentCityDisplay.innerHTML = `${searchQuery} (${todayDate})`;
-            currentClimateIcon.src = `http://openweathermap.org/img/wn/${currentCityClimate.icon}@2x.png`;
+            currentClimateIcon.src = `https://openweathermap.org/img/wn/${currentCityClimate.icon}@2x.png`;
             todayTempEl.innerText = `Temp: ${currentCityClimate.temperature} °F`;
             todayWindEl.innerText = `Wind: ${currentCityClimate.windSpeed} MPH`;
             todayHumidEl.innerText = `Humidity: ${currentCityClimate.humidity}%`;
@@ -145,7 +145,7 @@ function renderFutureForecast(fiveDayWeather) {
         let forecastCard = `<div class="weather-forecast-card">
                                     <h5>${dayjs(fiveDayWeather[i].dt_txt).format('D/MM/YYYY')}</h5>
                                     <div id="climate-icon-${i+1}">
-                                        <img width="40px" src="http://openweathermap.org/img/wn/${fiveDayWeather[i].weather[0].icon}@2x.png" alt="an icon image of the forecasted weather condition">
+                                        <img width="40px" src="https://openweathermap.org/img/wn/${fiveDayWeather[i].weather[0].icon}@2x.png" alt="an icon image of the forecasted weather condition">
                                     </div>
                                     <p>Temperature: ${fiveDayWeather[i].main.temp} °F</p>
                                     <p>Wind: ${fiveDayWeather[i].wind.speed}MPH</p>

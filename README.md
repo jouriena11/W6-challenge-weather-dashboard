@@ -19,7 +19,7 @@ This weather dashboard web application provides current and 5-day forecast weath
 - OpenWeather 5 day weather forecast API
 
 ## URLs
-- [Deployed Application URL]()
+- [Deployed Application URL](https://jouriena11.github.io/weather-forecast-by-city-dashboard/)
 - [GitHub Repository URL](https://github.com/jouriena11/weather-forecast-by-city-dashboard)
 
 # Expected Behavior
