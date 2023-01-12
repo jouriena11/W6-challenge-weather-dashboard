@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mb-3">
+            <div class="col-12 header">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 offset-md-2 col-md-8 offset-lg-0 col-lg-3">
+                <div class="row">
+                    <div class="col-12 px-4 d-grid">
+                        <h2>Search for a City</h2>
+                        <input type="search" id="search-bar" placeholder="Enter a city name here">
+                        <button id="search-button" class="search-button">
+                            <p class="m-0">Search</p>
+                        </button>
+                    </div>
+                </div>
+                <div id="past-searches-container">
+                    <!-- <button class="past-search-btn">Test</button> -->
+                    <!-- to insertAdjacentHTML of past searches here; max past searches shown = 8 -->
+                </div>
+            </div>
+            <div class="offset-1 col-10 offset-lg-0 col-lg-9">
+                <div class="row">
+                    <div class="col-12 border border-dark border-2">
+                        <div class="d-flex align-items-center">
+                            <h3 class="mb-0" id="current-city">City + Date + icon</h3>
+                            <img id="current-climate-icon" src="">
+                        </div>
+                        <div class="today-weather-data">
+                            <p id="today-temperature"></p>
+                            <p id="today-wind-speed"></p>
+                            <p id="today-humidity"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-12">
+                        <h4>5-Day Forecast:</h4>
+                    </div>
+                </div>
+                <div class="row" id="weather-forecast-card-container-bootstrap">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+  integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+  crossorigin="anonymous">
+</script>
+
+<script src="./assets/script.js"></script>
+</html>
