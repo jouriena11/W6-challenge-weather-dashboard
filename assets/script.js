@@ -127,7 +127,7 @@ function getForecastWeather(cityCoordinates) {
         }
         let fiveDayWeather = [];
         console.log(data);
-        for(let i = 4; i < data.list.length; i++) {
+        for(let i = 0; i < data.list.length; i++) {
             const currentDate = data.list[i].dt_txt; // "2022-12-20 00:00:00"
             if(currentDate.split(" ")[1] === '00:00:00') { // as the data contains multiple weather forecast information, i.e., every 3 hours, deciding a specific time of the day from which to use the weather data is appropriate
                 fiveDayWeather.push(data.list[i]); 
