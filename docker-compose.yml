@@ -1,8 +1,8 @@
 version: '3.1'
 
 services:
-  movie-search-nginx-server:
-    container_name: movie-search-nginx-server
+  weather-report-nginx-server:
+    container_name: weather-report-nginx-server
     image: nginx
     restart: always
     volumes: 
