@@ -8,4 +8,4 @@ services:
     volumes: 
       - .:/usr/share/nginx/html
     ports: 
-      - 80:80
+      - 81:80
